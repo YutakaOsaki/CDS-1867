@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Chatbot</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Angelus Novus</h2>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-message bot-message" onclick="showGoBackButton(this)">
+                <div class="bot-avatar">
+                    <img src="images/Angelus.png" alt="Avatar">
+                </div>
+                <div class="chat___">
+                    <span class="bot-name">Angelus Novus</span>
+                    <div class="bot-content">
+                        
+                        <p>Hello! How can I assist you today?</p>
+                    </div>
+                </div>
+                <button class="go-back-button" onclick="event.stopPropagation(); goBack('2024-05-14T01:02:24.288923');">Go Back</button>
+            </div>
+        </div>
+        <div class="chat-controls">
+            <div id="transcript-display" class="hidden"></div>
+            <button id="mic-button" onclick="toggleRecognition()"><i class="fas fa-microphone"></i></button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

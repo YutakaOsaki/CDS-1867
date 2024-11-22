@@ -1,0 +1,173 @@
+body {
+  background-color: #030023;
+}
+
+/* Hide the transcript display */
+.hidden {
+  display: none;
+}
+
+/* General chat container styling */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  max-width: 100%;
+  height: 900px;
+  margin: 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #030023;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+/* Chat header styling */
+.chat-header {
+  padding: 5px;
+  background: #030023;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Chat window styling */
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #030023;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat message styling */
+.chat-message {
+  display: flex;
+  margin-bottom: 15px;
+  position: relative;
+  max-width: 70%;
+  align-items: center; /* Center align items vertically */
+}
+
+.bot-avatar {
+  margin-right: 10px;
+}
+
+.bot-avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.chat___ {
+  display: flex;
+  flex-direction: column;
+}
+
+.bot-content {
+  display: flex;
+  align-items: center;
+  background: #CBD6FF;
+  border-radius: 15px 15px 15px 0;
+  padding: 10px;
+  position: relative;
+}
+
+.bot-name {
+  font-size: 0.8em;
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.user-message {
+  background: #fff;
+  align-self: flex-end;
+  border-radius: 15px 15px 0px 15px;
+  padding: 10px;
+}
+
+.chat-message p {
+  margin: 0;
+  color: black;
+  margin-right: 20px;
+}
+
+/* Go Back button styling */
+.go-back-button {
+  margin-left: 10px;
+  background: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100px;  /* Set a fixed width for consistency */
+  text-align: center;  /* Ensure the text is centered */
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.go-back-button.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Chat controls styling */
+.chat-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #030023;
+}
+
+/* Microphone button styling */
+#mic-button {
+  background: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5em;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#mic-button:hover {
+  background: #c0392b;
+}
+
+/* Recording active state */
+#mic-button.recording {
+  background: #e74c3c;
+  transform: scale(1.2);
+}
+
+/* Scrollbar styling */
+.chat-window::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-window::-webkit-scrollbar-track {
+  background: #1a1e24;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background: #0f5c7e;
+  border-radius: 10px;
+}
+
+.chat-window::-webkit-scrollbar-thumb:hover {
+  background: #0b4a62;
+}
